@@ -7,9 +7,10 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 // bootstrap-icons
 import "bootstrap-icons/font/bootstrap-icons.css";
 
-import { Components1, Components2, Components3, Components4, Components5, Components6 } from "./01components/Components";
-import { Events1, Events2, Events3, Events4 } from "./01components/Events";
+import { Http } from "./02http/Http";
 import { CounterApp } from "./00examples/CounterApp";
+import { Events1, Events2, Events3, Events4 } from "./01components/Events";
+import { Components1, Components2, Components3, Components4, Components5, Components6 } from "./01components/Components";
 
 // import App from "./App.tsx";
 
@@ -17,6 +18,8 @@ import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
+    <Http />
+
     <CounterApp />
 
     <Events1 />
