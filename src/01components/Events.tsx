@@ -3,7 +3,9 @@
 export const Events1 = () => {
   return (
     <>
-      <button onClick={() => console.log("events 1")}>events 1</button>
+      <button className="btn btn-primary" onClick={() => console.log("events 1")}>
+        events 1
+      </button>
       <br />
     </>
   );
@@ -18,7 +20,9 @@ export const Events2 = () => {
 
   return (
     <>
-      <button onClick={handleEvent}>events 2</button>
+      <button className="btn btn-primary" onClick={handleEvent}>
+        events 2
+      </button>
       <br />
     </>
   );
@@ -30,6 +34,7 @@ export const Events3 = () => {
   return (
     <>
       <button
+        className="btn btn-primary"
         onClick={(event) => {
           console.log("events 3");
           console.log(event);
@@ -51,7 +56,9 @@ export const Events4 = () => {
 
   return (
     <>
-      <button onClick={handleEvent}>events 4</button>
+      <button className="btn btn-primary" onClick={handleEvent}>
+        events 4
+      </button>
       <br />
     </>
   );
