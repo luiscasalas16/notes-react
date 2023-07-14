@@ -25,6 +25,11 @@ A continuación, un conjunto de enlaces de interés.
 
 ### Artículos
 
+- React & TypeScript
+  - [URL](https://devtrium.com/posts/react-typescript-how-to-type-hooks) - Manejo de Hooks con TypeScript en React.
+  - [URL](https://devtrium.com/posts/react-typescript-events) - Manejo de Events con TypeScript en React.
+  - [URL](https://react-typescript-cheatsheet.netlify.app/docs/basic/setup) - React TypeScript Cheatsheet
+
 ---
 
 ### Paquetes
