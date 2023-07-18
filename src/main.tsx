@@ -7,8 +7,8 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 // bootstrap-icons
 import "bootstrap-icons/font/bootstrap-icons.css";
 
-import { CounterApp } from "./00examples/01counter/CounterApp";
 import { GifMain } from "./00examples/03gifs/GifMain";
+import { CounterApp } from "./00examples/01counter/CounterApp";
 
 import { Http } from "./02http/Http";
 import { Composition1C, Composition2C } from "./01components/Composition";
