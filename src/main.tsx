@@ -8,12 +8,11 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 import { GifMain } from "./00examples/03gifs/GifMain";
-import { CounterApp } from "./00examples/01counter/CounterApp";
-
-import { Http } from "./02http/Http";
-import { Composition1C, Composition2C } from "./01components/Composition";
-import { Events1, Events2, Events3, Events4 } from "./01components/Events";
-import { Components1, Components2, Components3, Components4, Components5, Components6 } from "./01components/Components";
+// import { CounterApp } from "./00examples/01counter/CounterApp";
+// import { Http } from "./02http/Http";
+// import { Composition1C, Composition2C } from "./01components/Composition";
+// import { Events1, Events2, Events3, Events4 } from "./01components/Events";
+// import { Components1, Components2, Components3, Components4, Components5, Components6 } from "./01components/Components";
 
 // import App from "./App.tsx";
 

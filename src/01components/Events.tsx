@@ -1,4 +1,4 @@
-//
+//inline no event
 
 export const Events1 = () => {
   return (
@@ -11,7 +11,7 @@ export const Events1 = () => {
   );
 };
 
-//
+//function no event
 
 export const Events2 = () => {
   const handleEvent = () => {
@@ -28,14 +28,14 @@ export const Events2 = () => {
   );
 };
 
-//
+//inline event
 
 export const Events3 = () => {
   return (
     <>
       <button
         className="btn btn-primary"
-        onClick={(event) => {
+        onClick={(event: React.SyntheticEvent) => {
           console.log("events 3");
           console.log(event);
         }}>
@@ -46,7 +46,7 @@ export const Events3 = () => {
   );
 };
 
-//
+//function event
 
 export const Events4 = () => {
   const handleEvent = (event: React.SyntheticEvent) => {
@@ -63,3 +63,18 @@ export const Events4 = () => {
     </>
   );
 };
+
+// //function type and event type
+// const onChange0: React.ChangeEventHandler<HTMLInputElement> = (e: React.ChangeEvent<HTMLInputElement>) => {
+//   console.log(e.target.value);
+// };
+
+// //function type
+// const onChange1: React.ChangeEventHandler<HTMLInputElement> = (e) => {
+//   console.log(e.target.value);
+// };
+
+// //event type
+// const onChange2 = (e: React.ChangeEvent<HTMLInputElement>) => {
+//   console.log(e.target.value);
+// };
