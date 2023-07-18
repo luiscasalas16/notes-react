@@ -27,6 +27,12 @@ A continuación, un conjunto de enlaces de interés.
 
 ### Artículos
 
+- TypeScript
+
+  - https://www.typescriptlang.org/docs/handbook/intro.html
+  - https://blog.jannikwempe.com/creating-reusable-react-components-with-typescript
+  - https://blog.logrocket.com/using-react-children-prop-with-typescript/
+
 - React & TypeScript
   - [URL](https://devtrium.com/posts/react-typescript-how-to-type-hooks) - Manejo de Hooks con TypeScript en React.
   - [URL](https://devtrium.com/posts/react-typescript-events) - Manejo de Events con TypeScript en React.
