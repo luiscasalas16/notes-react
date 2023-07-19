@@ -78,3 +78,15 @@ export const Events4 = () => {
 // const onChange2 = (e: React.ChangeEvent<HTMLInputElement>) => {
 //   console.log(e.target.value);
 // };
+
+//default
+export const Events = () => {
+  return (
+    <>
+      <Events1 />
+      <Events2 />
+      <Events3 />
+      <Events4 />
+    </>
+  );
+};

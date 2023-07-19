@@ -1,4 +1,4 @@
-import { Gif } from "./helpers/gifs-interface";
+import { Gif } from "../interfaces/gifsInterface";
 
 export const GifResults = ({ results }: { results: Gif[] }) => {
   return (

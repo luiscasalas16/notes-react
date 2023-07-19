@@ -1,12 +1,12 @@
 import { useState } from "react";
 
-import { GifResults } from "./GifResults";
-import { GifSearch } from "./GifSearch";
+import { GifResults } from "./components/GifResults";
+import { GifSearch } from "./components/GifSearch";
 
-import { searchGifs } from "./helpers/gifs-service";
-import { Gif } from "./helpers/gifs-interface";
+import { Gif } from "./interfaces/gifsInterface";
+import { searchGifs } from "./services/gifsService";
 
-export const GifMain = () => {
+export const GifApp = () => {
   const [results, setResults] = useState<Gif[]>([]);
 
   const onSearch = async (query: string) => {

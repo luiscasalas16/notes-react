@@ -41,3 +41,17 @@ type Components6Props = {
 export const Components6 = ({ message }: Components6Props) => {
   return <p>{message} 6</p>;
 };
+
+//default
+export const Components = () => {
+  return (
+    <>
+      <Components1></Components1>
+      <Components2></Components2>
+      <Components3 message="components"></Components3>
+      <Components4 message="components"></Components4>
+      <Components5 message="components"></Components5>
+      <Components6 message="components"></Components6>
+    </>
+  );
+};

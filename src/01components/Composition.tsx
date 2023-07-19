@@ -59,3 +59,13 @@ export const Composition2C = () => {
     </p>
   );
 };
+
+//default
+export const Composition = () => {
+  return (
+    <>
+      <Composition1C></Composition1C>
+      <Composition2C></Composition2C>
+    </>
+  );
+};

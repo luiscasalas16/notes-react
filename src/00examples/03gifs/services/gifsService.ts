@@ -1,4 +1,4 @@
-import { Gif } from "./gifs-interface";
+import { Gif } from "../interfaces/gifsInterface";
 
 export const searchGifs = async (query: string = ""): Promise<Gif[]> => {
   const apiUrl = "https://api.giphy.com/v1/gifs";
