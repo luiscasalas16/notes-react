@@ -11,18 +11,10 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 
 import "./index.css";
 
-import DefaultRouter from "./routes/DefaultRouter";
+import routerRoot from "./routes/root";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <RouterProvider router={DefaultRouter} />
-
-    {/*
-      <Http />
-
-      <Composition2C></Composition2C>
-      <Composition1C></Composition1C>
-
-    */}
+    <RouterProvider router={routerRoot} />
   </React.StrictMode>
 );

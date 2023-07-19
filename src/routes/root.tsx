@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, Navigate } from "react-router-dom";
 
 import Master from "../shared/components/Master";
 
@@ -15,12 +15,13 @@ import { Components, Events, Composition } from "../01components";
 import { Http } from "../02http";
 
 import ErrorPage from "../shared/page/ErrorPage";
+import NotFoundPage from "../shared/page/NotFoundPage";
 
 export default createBrowserRouter(
   [
     {
       path: "/",
-      element: <HomePage />,
+      element: <Navigate to="home" replace />,
       errorElement: <ErrorPage />,
     },
     {
@@ -62,6 +63,16 @@ export default createBrowserRouter(
       path: "http",
       element: <Master />,
       children: [{ path: "basic", element: <Http /> }],
+    },
+    //not fount route
+    {
+      path: "notfound",
+      element: <NotFoundPage />,
+    },
+    //default route redirection
+    {
+      path: "*",
+      element: <Navigate to="notfound" replace />,
     },
   ],
   {
