@@ -11,8 +11,9 @@ import AboutMaster from "../about/AboutMaster";
 import ApplicationPage from "../about/pages/ApplicationPage";
 import DeveloperPage from "../about/pages/DeveloperPage";
 
-import { Components, Events, Composition } from "../01components";
-import { Http } from "../02http";
+import { Components, Bindings, Rendering, Events, Composition } from "../01basic";
+import { UseState } from "../02hooks";
+import { Http } from "../03http";
 
 import ErrorPage from "../shared/page/ErrorPage";
 import NotFoundPage from "../shared/page/NotFoundPage";
@@ -55,9 +56,16 @@ export default createBrowserRouter(
       element: <Master />,
       children: [
         { path: "components", element: <Components /> },
+        { path: "bindings", element: <Bindings /> },
+        { path: "rendering", element: <Rendering /> },
         { path: "events", element: <Events /> },
         { path: "composition", element: <Composition /> },
       ],
+    },
+    {
+      path: "hooks",
+      element: <Master />,
+      children: [{ path: "useState", element: <UseState /> }],
     },
     {
       path: "http",

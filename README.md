@@ -17,6 +17,11 @@ Los comandos para ejecutarla son:
 
 A continuación, un conjunto de enlaces de interés.
 
+-- TODO
+https://www.robinwieruch.de/react-router-private-routes/
+https://devtrium.com/posts/react-typescript-how-to-type-hooks
+https://devtrium.com/posts/react-typescript-events
+
 ---
 
 ### Documentación
@@ -34,8 +39,6 @@ A continuación, un conjunto de enlaces de interés.
   - https://blog.logrocket.com/using-react-children-prop-with-typescript/
 
 - React & TypeScript
-  - [URL](https://devtrium.com/posts/react-typescript-how-to-type-hooks) - Manejo de Hooks con TypeScript en React.
-  - [URL](https://devtrium.com/posts/react-typescript-events) - Manejo de Events con TypeScript en React.
   - [URL](https://react-typescript-cheatsheet.netlify.app) - React TypeScript Cheatsheet
   - [URL](https://blog.logrocket.com/using-bootstrap-with-react-tutorial-with-examples) - instalar bootstrap en una aplicación en react
 

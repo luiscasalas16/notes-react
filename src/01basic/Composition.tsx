@@ -13,11 +13,17 @@ export const Composition1C = () => {
   const message2: string = "component 1";
 
   return (
-    <p>
-      <Composition1A message={message1}></Composition1A>
-      &nbsp;
-      <Composition1B message={message2}></Composition1B>
-    </p>
+    <>
+      <p>
+        <strong>parameters</strong>
+      </p>
+      <p>
+        <Composition1A message={message1}></Composition1A>
+      </p>
+      <p>
+        <Composition1B message={message2}></Composition1B>
+      </p>
+    </>
   );
 };
 
@@ -52,18 +58,28 @@ export const Composition2C = () => {
   const message2: string = "component 2";
 
   return (
-    <p>
-      <Composition2A message={message1} event={handleEventA}></Composition2A>
-      &nbsp;
-      <Composition2B message={message2} event={handleEventB}></Composition2B>
-    </p>
+    <>
+      <p>
+        <strong>parameters and events</strong>
+      </p>
+      <p>
+        <span>component2C</span>
+      </p>
+      <p>
+        <Composition2A message={message1} event={handleEventA}></Composition2A>
+      </p>
+      <p>
+        <Composition2B message={message2} event={handleEventB}></Composition2B>
+      </p>
+    </>
   );
 };
 
-//default
 export const Composition = () => {
   return (
     <>
+      <h2>Basic / Composition</h2>
+      <hr />
       <Composition1C></Composition1C>
       <Composition2C></Composition2C>
     </>

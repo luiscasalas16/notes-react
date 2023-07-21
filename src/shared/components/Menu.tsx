@@ -3,12 +3,14 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 interface Menu {
+  id?: number;
   name: string;
   route?: string;
   items?: MenuItem[];
 }
 
 interface MenuItem {
+  id?: number;
   name?: string;
   route?: string;
   empty?: boolean;
@@ -27,18 +29,34 @@ export default function Menu() {
         items: [{ name: "Counter", route: "/examples/counter" }, { empty: true }, { name: "Gifs", route: "/examples/gifs" }],
       },
       {
-        name: "Components",
+        name: "Basic",
         items: [
-          { name: "components", route: "/components/components" },
-          { name: "events", route: "/components/events" },
-          { name: "composition", route: "/components/composition" },
+          { name: "Components", route: "/components/components" },
+          { name: "Bindings", route: "/components/bindings" },
+          { name: "Rendering", route: "/components/rendering" },
+          { name: "Events", route: "/components/events" },
+          { name: "Composition", route: "/components/composition" },
         ],
+      },
+      {
+        name: "Hooks",
+        items: [{ name: "hooks", route: "/hooks/useState" }],
       },
       {
         name: "Http",
         items: [{ name: "basic", route: "/http/basic" }],
       },
     ];
+
+    let id = 0;
+    for (const menu of t) {
+      menu.id = id++;
+      if (menu.items) {
+        for (const menuItem of menu.items) {
+          menuItem.id = id++;
+        }
+      }
+    }
 
     setMenus(t);
   }, []);
@@ -63,26 +81,26 @@ export default function Menu() {
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             {menus.map((menu: Menu) =>
               !!!menu.items ? (
-                <li key={menu.route!} className="nav-item">
+                <li key={menu.id!} className="nav-item">
                   <Link to={menu.route!} className="nav-link">
                     {menu.name}
                   </Link>
                 </li>
               ) : (
-                <li key={menu.route!} className="nav-item dropdown">
+                <li key={menu.id!} className="nav-item dropdown">
                   <a className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     {menu.name}
                   </a>
                   <ul className="dropdown-menu">
                     {menu.items.map((item: MenuItem) =>
                       !item.empty ? (
-                        <li key={item.route!}>
+                        <li key={item.id!}>
                           <Link to={item.route!} className="dropdown-item">
                             {item.name}
                           </Link>
                         </li>
                       ) : (
-                        <li key={item.route!}>
+                        <li key={item.id!}>
                           <hr className="dropdown-divider" />
                         </li>
                       )

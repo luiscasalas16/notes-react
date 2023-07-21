@@ -83,6 +83,8 @@ export const Events4 = () => {
 export const Events = () => {
   return (
     <>
+      <h2>Basic / Events</h2>
+      <hr />
       <Events1 />
       <Events2 />
       <Events3 />
