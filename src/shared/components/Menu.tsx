@@ -40,7 +40,15 @@ export default function Menu() {
       },
       {
         name: "Hooks",
-        items: [{ name: "hooks", route: "/hooks/useState" }],
+        items: [
+          { name: "useState", route: "/hooks/useState" },
+          { name: "useEffect", route: "/hooks/useEffect" },
+          { name: "useRef", route: "/hooks/useRef" },
+          { name: "useCallback", route: "/hooks/useCallback" },
+          { name: "useContext", route: "/hooks/useContext" },
+          { name: "useMemo", route: "/hooks/useMemo" },
+          { name: "useReducer", route: "/hooks/useReducer" },
+        ],
       },
       {
         name: "Http",

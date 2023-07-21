@@ -1,6 +1,7 @@
 export const Rendering = () => {
   const hours = new Date().getHours();
   const isNight = 18 <= hours || hours <= 6;
+  const isDay = !isNight;
 
   let content;
   if (isNight) {
@@ -37,6 +38,11 @@ export const Rendering = () => {
       <hr />
       <h4>conditional in line</h4>
       {isNight ? <span>night</span> : <span>day</span>}
+
+      <hr />
+      <h4>conditional in boolean</h4>
+      {isDay && <span>day</span>}
+      {isNight && <span>night</span>}
 
       <hr />
       <h4>lists in variable</h4>

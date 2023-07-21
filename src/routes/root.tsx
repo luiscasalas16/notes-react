@@ -12,7 +12,7 @@ import ApplicationPage from "../about/pages/ApplicationPage";
 import DeveloperPage from "../about/pages/DeveloperPage";
 
 import { Components, Bindings, Rendering, Events, Composition } from "../01basic";
-import { UseState } from "../02hooks";
+import { UseState, UseEffect, UseRef, UseCallback, UseContext, UseMemo, UseReducer } from "../02hooks";
 import { Http } from "../03http";
 
 import ErrorPage from "../shared/page/ErrorPage";
@@ -65,7 +65,15 @@ export default createBrowserRouter(
     {
       path: "hooks",
       element: <Master />,
-      children: [{ path: "useState", element: <UseState /> }],
+      children: [
+        { path: "useState", element: <UseState /> },
+        { path: "useEffect", element: <UseEffect /> },
+        { path: "useRef", element: <UseRef /> },
+        { path: "useCallback", element: <UseCallback /> },
+        { path: "useContext", element: <UseContext /> },
+        { path: "useMemo", element: <UseMemo /> },
+        { path: "useReducer", element: <UseReducer /> },
+      ],
     },
     {
       path: "http",
