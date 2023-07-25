@@ -69,10 +69,10 @@ export default createBrowserRouter(
         { path: "useState", element: <UseState /> },
         { path: "useEffect", element: <UseEffect /> },
         { path: "useRef", element: <UseRef /> },
-        { path: "useCallback", element: <UseCallback /> },
-        { path: "useContext", element: <UseContext /> },
         { path: "useMemo", element: <UseMemo /> },
+        { path: "useCallback", element: <UseCallback /> },
         { path: "useReducer", element: <UseReducer /> },
+        { path: "useContext", element: <UseContext /> },
       ],
     },
     {

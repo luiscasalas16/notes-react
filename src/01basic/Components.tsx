@@ -1,4 +1,4 @@
-import { ReactNode, ReactElement } from "react";
+import { ReactElement } from "react";
 
 //no parameters, inferred return type
 
@@ -61,6 +61,8 @@ type Component7Props = {
 export const Component7 = ({ message, optional = "5" }: Component7Props) => {
   return <p>{optional + " - " + message}</p>;
 };
+
+//default
 
 export const Components = () => {
   return (
