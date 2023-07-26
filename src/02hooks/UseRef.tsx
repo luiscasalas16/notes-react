@@ -20,7 +20,7 @@ Returns
 
 //reference value
 
-const Example1 = () => {
+const UseRef1 = () => {
   const [counter, setCounter] = useState(0);
   const intervalRef = useRef<number | undefined>(undefined);
 
@@ -54,7 +54,7 @@ const Example1 = () => {
 
 //reference DOM
 
-const Example2 = () => {
+const UseRef2 = () => {
   const inputRef = useRef<HTMLInputElement>(null);
 
   function handleClick() {
@@ -76,7 +76,7 @@ const Example2 = () => {
 
 //manage ref
 
-const Example3 = () => {
+const UseRef3 = () => {
   const [counter, setCounter] = useState(0);
   const intervalRef = useRef<number | undefined>(undefined);
 
@@ -99,9 +99,9 @@ export const UseRef = () => {
     <>
       <h2>Hooks / useRef</h2>
       <hr />
-      <Example1></Example1>
-      <Example2></Example2>
-      <Example3></Example3>
+      <UseRef1></UseRef1>
+      <UseRef2></UseRef2>
+      <UseRef3></UseRef3>
     </>
   );
 };

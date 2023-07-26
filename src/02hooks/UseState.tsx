@@ -19,7 +19,7 @@ Returns
 
 //basic
 
-const Example1 = () => {
+const UseState1 = () => {
   //inferred type
   const [state1] = useState("inferred type");
   //explicit type
@@ -47,7 +47,7 @@ const Example1 = () => {
 
 //init and set
 
-const Example2 = () => {
+const UseState2 = () => {
   //value init
   const [count1, setCount1] = useState(0);
   //function init
@@ -89,7 +89,7 @@ const Example2 = () => {
 
 //input
 
-const Example3 = () => {
+const UseState3 = () => {
   const [text, setText] = useState("");
 
   function handleChange(e: ChangeEvent<HTMLInputElement>) {
@@ -109,7 +109,7 @@ const Example3 = () => {
 
 //object
 
-const Example4 = () => {
+const UseState4 = () => {
   const [user, setUser] = useState<User>({ firstName: "", lastName: "" } as User);
 
   function handleChange1(e: ChangeEvent<HTMLInputElement>) {
@@ -136,7 +136,7 @@ const Example4 = () => {
 
 //reset key
 
-const Example5A = () => {
+const UseState5 = () => {
   const [version, setVersion] = useState(0);
 
   function handleReset() {
@@ -151,12 +151,12 @@ const Example5A = () => {
         Reset
       </button>
       &nbsp;
-      <Example5B key={version} />
+      <UseState5Aux key={version} />
     </>
   );
 };
 
-const Example5B = () => {
+const UseState5Aux = () => {
   const [name, setName] = useState("");
 
   return (
@@ -175,11 +175,11 @@ export const UseState = () => {
     <>
       <h2>Hooks / useState</h2>
       <hr />
-      <Example1></Example1>
-      <Example2></Example2>
-      <Example3></Example3>
-      <Example4></Example4>
-      <Example5A></Example5A>
+      <UseState1></UseState1>
+      <UseState2></UseState2>
+      <UseState3></UseState3>
+      <UseState4></UseState4>
+      <UseState5></UseState5>
     </>
   );
 };

@@ -24,7 +24,7 @@ Returns
 
 //skip expensive calculations
 
-const Example1 = () => {
+const UseMemo1 = () => {
   const [number, setNumber] = useState("0");
   const [isDark, setIsDark] = useState(false);
 
@@ -44,12 +44,12 @@ const Example1 = () => {
       &nbsp;
       <input value={number} onChange={handleChange} />
       &nbsp;
-      <Example1Aux s={number}></Example1Aux>
+      <UseMemo1Aux s={number}></UseMemo1Aux>
     </p>
   );
 };
 
-const Example1Aux = ({ s }: { s: string }) => {
+const UseMemo1Aux = ({ s }: { s: string }) => {
   function calc(n: number): number {
     let startTime = performance.now();
     while (performance.now() - startTime < 750) {}
@@ -64,7 +64,7 @@ const Example1Aux = ({ s }: { s: string }) => {
 
 //skip expensive render at component declare
 
-const Example2 = () => {
+const UseMemo2 = () => {
   const [number, setNumber] = useState("0");
   const [isDark, setIsDark] = useState(false);
 
@@ -84,12 +84,12 @@ const Example2 = () => {
       &nbsp;
       <input value={number} onChange={handleChange} />
       &nbsp;
-      <Example2Aux s={number}></Example2Aux>
+      <UseMemo2Aux s={number}></UseMemo2Aux>
     </p>
   );
 };
 
-const Example2Aux = /*useMemo*/ memo(({ s }: { s: string }) => {
+const UseMemo2Aux = /*useMemo*/ memo(({ s }: { s: string }) => {
   function calc(n: number): number {
     let startTime = performance.now();
     while (performance.now() - startTime < 750) {}
@@ -103,7 +103,7 @@ const Example2Aux = /*useMemo*/ memo(({ s }: { s: string }) => {
 
 //skip expensive render at component use
 
-const Example3 = () => {
+const UseMemo3 = () => {
   const [number, setNumber] = useState("0");
   const [isDark, setIsDark] = useState(false);
 
@@ -112,7 +112,7 @@ const Example3 = () => {
   }
 
   //useMemo
-  const x = useMemo(() => <Example3Aux s={number}></Example3Aux>, [number]);
+  const x = useMemo(() => <UseMemo3Aux s={number}></UseMemo3Aux>, [number]);
 
   return (
     <p style={isDark ? { backgroundColor: "black", color: "white" } : { backgroundColor: "white", color: "black" }}>
@@ -131,7 +131,7 @@ const Example3 = () => {
   );
 };
 
-const Example3Aux = ({ s }: { s: string }) => {
+const UseMemo3Aux = ({ s }: { s: string }) => {
   function calc(n: number): number {
     let startTime = performance.now();
     while (performance.now() - startTime < 750) {}
@@ -150,9 +150,9 @@ export const UseMemo = () => {
     <>
       <h2>Hooks / useMemo</h2>
       <hr />
-      <Example1></Example1>
-      <Example2></Example2>
-      <Example3></Example3>
+      <UseMemo1></UseMemo1>
+      <UseMemo2></UseMemo2>
+      <UseMemo3></UseMemo3>
     </>
   );
 };

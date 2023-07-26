@@ -24,7 +24,7 @@ Returns
 
 //skip render with function parameter
 
-const Example1 = () => {
+const UseCallback1 = () => {
   const [number, setNumber] = useState("0");
   const [isDark, setIsDark] = useState(false);
 
@@ -48,12 +48,12 @@ const Example1 = () => {
       &nbsp;
       <input value={number} onChange={handleChange} />
       &nbsp;
-      <Example1Aux number={number} repaint={repaint}></Example1Aux>
+      <UseCallback1Aux number={number} repaint={repaint}></UseCallback1Aux>
     </p>
   );
 };
 
-const Example1Aux = memo(({ number, repaint }: { number: string; repaint: (result: number) => void }) => {
+const UseCallback1Aux = memo(({ number, repaint }: { number: string; repaint: (result: number) => void }) => {
   function calc(n: number): number {
     let startTime = performance.now();
     while (performance.now() - startTime < 750) {}
@@ -75,7 +75,7 @@ const Example1Aux = memo(({ number, repaint }: { number: string; repaint: (resul
 
 //prevent effect fire with function dependency
 
-const Example2 = () => {
+const UseCallback2 = () => {
   const [chat, setChat] = useState("Chat 1");
 
   return (
@@ -92,12 +92,12 @@ const Example2 = () => {
         <option value="Chat 3">Chat 3</option>
       </select>
       &nbsp;
-      <Example2Aux chat={chat}></Example2Aux>
+      <UseCallback2Aux chat={chat}></UseCallback2Aux>
     </p>
   );
 };
 
-const Example2Aux = ({ chat }: { chat: string }) => {
+const UseCallback2Aux = ({ chat }: { chat: string }) => {
   const [repaintCounter, setRepaintCounter] = useState(0);
 
   const createParameters = useCallback(() => {
@@ -139,8 +139,8 @@ export const UseCallback = () => {
     <>
       <h2>Hooks / useCallback</h2>
       <hr />
-      <Example1></Example1>
-      <Example2></Example2>
+      <UseCallback1></UseCallback1>
+      <UseCallback2></UseCallback2>
     </>
   );
 };

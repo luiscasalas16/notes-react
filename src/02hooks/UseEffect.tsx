@@ -32,7 +32,7 @@ Returns
 
 //form changes
 
-const Example1 = () => {
+const UseEffect1 = () => {
   const [user, setUser] = useState<User>({ firstName: "", lastName: "" } as User);
 
   function handleChange1(e: ChangeEvent<HTMLInputElement>) {
@@ -85,7 +85,7 @@ const Example1 = () => {
 
 //browser events
 
-const Example2 = () => {
+const UseEffect2 = () => {
   const [coords, setCoords] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -111,7 +111,7 @@ const Example2 = () => {
 
 //control widget
 
-const Example3 = () => {
+const UseEffect3 = () => {
   const [zoom, setZoom] = useState(0);
   const widgetRef = useRef<Date>(null!);
 
@@ -141,7 +141,7 @@ const Example3 = () => {
 
 //fetch data
 
-const Example4 = () => {
+const UseEffect4 = () => {
   const [person, setPerson] = useState("Person 1");
   const [bio, setBio] = useState<string | null>(null);
 
@@ -189,10 +189,10 @@ export const UseEffect = () => {
     <>
       <h2>Hooks / useEffect</h2>
       <hr />
-      <Example1></Example1>
-      <Example2></Example2>
-      <Example3></Example3>
-      <Example4></Example4>
+      <UseEffect1></UseEffect1>
+      <UseEffect2></UseEffect2>
+      <UseEffect3></UseEffect3>
+      <UseEffect4></UseEffect4>
     </>
   );
 };
