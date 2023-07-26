@@ -1,4 +1,4 @@
-export const Rendering = () => {
+export const Render = () => {
   const hours = new Date().getHours();
   const isNight = 18 <= hours || hours <= 6;
   const isDay = !isNight;
@@ -29,7 +29,7 @@ export const Rendering = () => {
 
   return (
     <>
-      <h2>Basic / Rendering</h2>
+      <h2>Basic / Render</h2>
 
       <hr />
       <h4>conditional in variable</h4>

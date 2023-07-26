@@ -1,13 +1,14 @@
+import { MouseEventHandler, MouseEvent } from "react";
+
 //inline no event
 
 export const Events1 = () => {
   return (
-    <>
+    <p>
       <button className="btn btn-primary" onClick={() => console.log("events 1")}>
-        events 1
+        inline no event
       </button>
-      <br />
-    </>
+    </p>
   );
 };
 
@@ -19,12 +20,11 @@ export const Events2 = () => {
   };
 
   return (
-    <>
+    <p>
       <button className="btn btn-primary" onClick={handleEvent}>
-        events 2
+        function no event
       </button>
-      <br />
-    </>
+    </p>
   );
 };
 
@@ -32,39 +32,88 @@ export const Events2 = () => {
 
 export const Events3 = () => {
   return (
-    <>
+    <p>
       <button
         className="btn btn-primary"
-        onClick={(event: React.SyntheticEvent) => {
+        onClick={(event) => {
           console.log("events 3");
           console.log(event);
         }}>
-        events 2
+        inline event
       </button>
-      <br />
-    </>
+    </p>
   );
 };
 
 //function event
 
 export const Events4 = () => {
-  const handleEvent = (event: React.SyntheticEvent) => {
+  const handleEvent = (event: MouseEvent) => {
     console.log("events 4");
     console.log(event);
   };
 
   return (
-    <>
+    <p>
       <button className="btn btn-primary" onClick={handleEvent}>
-        events 4
+        function event
       </button>
-      <br />
-    </>
+    </p>
   );
 };
 
-// //function type and event type
+//handler function type and event type
+
+export const Events5 = () => {
+  const handleEvent: MouseEventHandler<HTMLButtonElement> = (event: MouseEvent<HTMLButtonElement>) => {
+    console.log("events 5");
+    console.log(event);
+  };
+
+  return (
+    <p>
+      <button className="btn btn-primary" onClick={handleEvent}>
+        handler function type and event type
+      </button>
+    </p>
+  );
+};
+
+//handler function type
+
+export const Events6 = () => {
+  const handleEvent: MouseEventHandler<HTMLButtonElement> = (event) => {
+    console.log("events 6");
+    console.log(event);
+  };
+
+  return (
+    <p>
+      <button className="btn btn-primary" onClick={handleEvent}>
+        handler function type
+      </button>
+    </p>
+  );
+};
+
+//handler event type
+
+export const Events7 = () => {
+  const handleEvent = (event: MouseEvent<HTMLButtonElement>) => {
+    console.log("events 7");
+    console.log(event);
+  };
+
+  return (
+    <p>
+      <button className="btn btn-primary" onClick={handleEvent}>
+        handler event type
+      </button>
+    </p>
+  );
+};
+
+// //
 // const onChange0: React.ChangeEventHandler<HTMLInputElement> = (e: React.ChangeEvent<HTMLInputElement>) => {
 //   console.log(e.target.value);
 // };
@@ -90,6 +139,9 @@ export const Events = () => {
       <Events2 />
       <Events3 />
       <Events4 />
+      <Events5 />
+      <Events6 />
+      <Events7 />
     </>
   );
 };

@@ -1,17 +1,14 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
 
 import Master from "../shared/components/Master";
-
-import { CounterApp } from "../00examples/01counter/CounterApp";
-import { GifApp } from "../00examples/03gifs/GifApp";
-
 import HomePage from "../home/HomePage";
 
 import AboutMaster from "../about/AboutMaster";
 import ApplicationPage from "../about/pages/ApplicationPage";
 import DeveloperPage from "../about/pages/DeveloperPage";
 
-import { Components, Bindings, Rendering, Events, Composition } from "../01basic";
+import { CounterApp, HeroesApp, GifApp } from "../00examples";
+import { Components, Bindings, Render, Events, Composition } from "../01basic";
 import { UseState, UseEffect, UseRef, UseCallback, UseContext, UseMemo, UseReducer } from "../02hooks";
 import { Http } from "../03http";
 
@@ -48,6 +45,7 @@ export default createBrowserRouter(
       element: <Master />,
       children: [
         { path: "counter", element: <CounterApp /> },
+        { path: "heroes", element: <HeroesApp /> },
         { path: "gifs", element: <GifApp /> },
       ],
     },
@@ -55,9 +53,9 @@ export default createBrowserRouter(
       path: "components",
       element: <Master />,
       children: [
-        { path: "components", element: <Components /> },
         { path: "bindings", element: <Bindings /> },
-        { path: "rendering", element: <Rendering /> },
+        { path: "render", element: <Render /> },
+        { path: "components", element: <Components /> },
         { path: "events", element: <Events /> },
         { path: "composition", element: <Composition /> },
       ],

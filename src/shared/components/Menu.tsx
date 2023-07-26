@@ -26,14 +26,20 @@ export default function Menu() {
       { name: "About-Dev", route: "/about/developer" },
       {
         name: "Examples",
-        items: [{ name: "Counter", route: "/examples/counter" }, { empty: true }, { name: "Gifs", route: "/examples/gifs" }],
+        items: [
+          { name: "Counter", route: "/examples/counter" },
+          { empty: true },
+          { name: "Heroes", route: "/examples/heroes" },
+          { empty: true },
+          { name: "Gifs", route: "/examples/gifs" },
+        ],
       },
       {
         name: "Basic",
         items: [
-          { name: "Components", route: "/components/components" },
           { name: "Bindings", route: "/components/bindings" },
-          { name: "Rendering", route: "/components/rendering" },
+          { name: "Render", route: "/components/render" },
+          { name: "Components", route: "/components/components" },
           { name: "Events", route: "/components/events" },
           { name: "Composition", route: "/components/composition" },
         ],
