@@ -92,7 +92,7 @@ type TasksActions =
   | { type: "delete"; payload: { id: number } }
   | { type: "chance"; payload: { id: number } };
 
-function tasksReducer(state: TasksState, action: TasksActions) {
+function tasksReducer(state: TasksState, action: TasksActions): TasksState {
   switch (action.type) {
     case "insert": {
       return [
