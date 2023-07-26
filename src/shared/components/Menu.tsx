@@ -37,7 +37,7 @@ export default function Menu() {
       {
         name: "Basic",
         items: [
-          { name: "Bindings", route: "/components/bindings" },
+          { name: "Binding", route: "/components/binding" },
           { name: "Render", route: "/components/render" },
           { name: "Components", route: "/components/components" },
           { name: "Events", route: "/components/events" },

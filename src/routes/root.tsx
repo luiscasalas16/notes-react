@@ -8,7 +8,7 @@ import ApplicationPage from "../about/pages/ApplicationPage";
 import DeveloperPage from "../about/pages/DeveloperPage";
 
 import { CounterApp, HeroesApp, GifApp } from "../00examples";
-import { Components, Bindings, Render, Events, Composition } from "../01basic";
+import { Components, Binding, Render, Events, Composition } from "../01basic";
 import { UseState, UseEffect, UseRef, UseCallback, UseContext, UseMemo, UseReducer } from "../02hooks";
 import { Http } from "../03http";
 
@@ -53,7 +53,7 @@ export default createBrowserRouter(
       path: "components",
       element: <Master />,
       children: [
-        { path: "bindings", element: <Bindings /> },
+        { path: "binding", element: <Binding /> },
         { path: "render", element: <Render /> },
         { path: "components", element: <Components /> },
         { path: "events", element: <Events /> },

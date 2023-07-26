@@ -1,14 +1,14 @@
 //parameters
 
-export const Composition1A = ({ message }: { message: string }) => {
+const Composition1A = ({ message }: { message: string }) => {
   return <span>{message}A</span>;
 };
 
-export const Composition1B = ({ message }: { message: string }) => {
+const Composition1B = ({ message }: { message: string }) => {
   return <span>{message}B</span>;
 };
 
-export const Composition1C = () => {
+const Composition1C = () => {
   const message1: string = "component 1";
   const message2: string = "component 1";
 
@@ -29,7 +29,7 @@ export const Composition1C = () => {
 
 //parameters and events
 
-export const Composition2A = ({ message, event }: { message: string; event: Function }) => {
+const Composition2A = ({ message, event }: { message: string; event: Function }) => {
   return (
     <button className="btn btn-primary" onClick={() => event(message)}>
       {message}A
@@ -37,7 +37,7 @@ export const Composition2A = ({ message, event }: { message: string; event: Func
   );
 };
 
-export const Composition2B = ({ message, event }: { message: string; event: (message: string) => void }) => {
+const Composition2B = ({ message, event }: { message: string; event: (message: string) => void }) => {
   return (
     <button className="btn btn-primary" onClick={() => event(message)}>
       {message}B
@@ -45,7 +45,7 @@ export const Composition2B = ({ message, event }: { message: string; event: (mes
   );
 };
 
-export const Composition2C = () => {
+const Composition2C = () => {
   const handleEventA = (message: string) => {
     console.log(message + "A");
   };

@@ -2,7 +2,7 @@ import { MouseEventHandler, MouseEvent } from "react";
 
 //inline no event
 
-export const Events1 = () => {
+const Events1 = () => {
   return (
     <p>
       <button className="btn btn-primary" onClick={() => console.log("events 1")}>
@@ -14,7 +14,7 @@ export const Events1 = () => {
 
 //function no event
 
-export const Events2 = () => {
+const Events2 = () => {
   const handleEvent = () => {
     console.log("events 2");
   };
@@ -30,7 +30,7 @@ export const Events2 = () => {
 
 //inline event
 
-export const Events3 = () => {
+const Events3 = () => {
   return (
     <p>
       <button
@@ -47,7 +47,7 @@ export const Events3 = () => {
 
 //function event
 
-export const Events4 = () => {
+const Events4 = () => {
   const handleEvent = (event: MouseEvent) => {
     console.log("events 4");
     console.log(event);
@@ -64,7 +64,7 @@ export const Events4 = () => {
 
 //handler function type and event type
 
-export const Events5 = () => {
+const Events5 = () => {
   const handleEvent: MouseEventHandler<HTMLButtonElement> = (event: MouseEvent<HTMLButtonElement>) => {
     console.log("events 5");
     console.log(event);
@@ -81,7 +81,7 @@ export const Events5 = () => {
 
 //handler function type
 
-export const Events6 = () => {
+const Events6 = () => {
   const handleEvent: MouseEventHandler<HTMLButtonElement> = (event) => {
     console.log("events 6");
     console.log(event);
@@ -98,7 +98,7 @@ export const Events6 = () => {
 
 //handler event type
 
-export const Events7 = () => {
+const Events7 = () => {
   const handleEvent = (event: MouseEvent<HTMLButtonElement>) => {
     console.log("events 7");
     console.log(event);
@@ -112,21 +112,6 @@ export const Events7 = () => {
     </p>
   );
 };
-
-// //
-// const onChange0: React.ChangeEventHandler<HTMLInputElement> = (e: React.ChangeEvent<HTMLInputElement>) => {
-//   console.log(e.target.value);
-// };
-
-// //function type
-// const onChange1: React.ChangeEventHandler<HTMLInputElement> = (e) => {
-//   console.log(e.target.value);
-// };
-
-// //event type
-// const onChange2 = (e: React.ChangeEvent<HTMLInputElement>) => {
-//   console.log(e.target.value);
-// };
 
 //default
 

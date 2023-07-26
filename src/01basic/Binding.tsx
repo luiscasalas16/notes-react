@@ -1,4 +1,4 @@
-export const Bindings = () => {
+export const Binding = () => {
   const text_capitalize: string = "text-capitalize";
 
   const click = (event?: any) => {
