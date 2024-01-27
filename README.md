@@ -15,22 +15,18 @@ Los comandos para ejecutarla son:
 - npm run dev
 - npm run build
 
-A continuación, un conjunto de enlaces de interés.
-
--- TODO
-https://www.robinwieruch.de/react-router-private-routes/
-https://devtrium.com/posts/react-typescript-how-to-type-hooks
-https://devtrium.com/posts/react-typescript-events
-
----
-
-### Documentación
+## Documentación
 
 - [https://react.dev](https://react.dev)
 
----
+## Paquetes
 
-### Artículos
+- bibliotecas de paquetes de controles
+  - [https://primereact.org](https://primereact.org)
+  - [https://www.react-simple-maps.io](https://www.react-simple-maps.io)
+  - [https://mui.com](https://mui.com/)
+
+## Artículos
 
 - TypeScript
 
@@ -42,10 +38,7 @@ https://devtrium.com/posts/react-typescript-events
   - [URL](https://react-typescript-cheatsheet.netlify.app) - React TypeScript Cheatsheet
   - [URL](https://blog.logrocket.com/using-bootstrap-with-react-tutorial-with-examples) - instalar bootstrap en una aplicación en react
 
----
+## Cursos
 
-### Paquetes
-
----
-
-### Ejemplos
+- [React en 10 minutos - The Coder Cave](https://www.youtube.com/watch?v=Mb37ily9WuY)
+- [React: De cero a experto - Fernando Herrera](https://www.udemy.com/course/react-cero-experto/)
