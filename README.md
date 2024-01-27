@@ -18,25 +18,20 @@ Los comandos para ejecutarla son:
 ## Documentación
 
 - [https://react.dev](https://react.dev)
+- [The TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
+- [React TypeScript Cheatsheet](https://react-typescript-cheatsheet.netlify.app)
 
 ## Paquetes
 
-- bibliotecas de paquetes de controles
-  - [https://primereact.org](https://primereact.org)
-  - [https://www.react-simple-maps.io](https://www.react-simple-maps.io)
-  - [https://mui.com](https://mui.com/)
+- [https://primereact.org](https://primereact.org)
+- [https://www.react-simple-maps.io](https://www.react-simple-maps.io)
+- [https://mui.com](https://mui.com/)
 
 ## Artículos
 
-- TypeScript
-
-  - https://www.typescriptlang.org/docs/handbook/intro.html
-  - https://blog.jannikwempe.com/creating-reusable-react-components-with-typescript
-  - https://blog.logrocket.com/using-react-children-prop-with-typescript/
-
-- React & TypeScript
-  - [URL](https://react-typescript-cheatsheet.netlify.app) - React TypeScript Cheatsheet
-  - [URL](https://blog.logrocket.com/using-bootstrap-with-react-tutorial-with-examples) - instalar bootstrap en una aplicación en react
+- [How to add Bootstrap to React](https://blog.logrocket.com/using-bootstrap-with-react-tutorial-with-examples)
+- [Creating reusable components with TypeScript](https://blog.jannikwempe.com/creating-reusable-react-components-with-typescript)
+- [Using children prop with TypeScript](https://blog.logrocket.com/using-react-children-prop-with-typescript/)
 
 ## Cursos
 
